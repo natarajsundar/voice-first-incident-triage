@@ -1,7 +1,6 @@
 ## Awards & Recognition 🏆
-**Fastest End-to-End**  
-Received at the invitation-only DeepLearning.AI & Vocal Bridge Hackathon (Jan 30–31, 2026). The project moved from agent registration to full live functionality in approximately 10 minutes during the event.
-
+**Fastest End-to-End from agent registration to full live functionality**  
+Received at the invitation-only DeepLearning.AI & Vocal Bridge Hackathon (Jan 30–31, 2026).
 ---
 
 🎥 **Demo Video:**  
