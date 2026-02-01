@@ -1,7 +1,3 @@
-
-
-
-
 # VoiceOps Bridge
 
 A voice-first incident triage copilot built on Vocal Bridge + LiveKit, designed with explicit decision boundaries, production-grade observability, and failure handling.
