@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoiceOps Bridge</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>VoiceOps Bridge</h1>
+      <p class="subtitle">Voice-first incident triage copilot (Vocal Bridge + LiveKit)</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Connection</h2>
+        <div class="row">
+          <button id="connectBtn">Start Voice Chat</button>
+          <button id="disconnectBtn" disabled>End Call</button>
+          <span id="status" class="pill">disconnected</span>
+        </div>
+        <p class="hint">
+          Tip: Your browser may require a user gesture to play audio. Click “Start Voice Chat” first.
+        </p>
+        <div id="audioMount"></div>
+      </section>
+
+      <section class="card">
+        <h2>Agent → App actions</h2>
+        <p class="hint">
+          The agent can publish structured actions on the LiveKit data channel topic <code>client_actions</code>.
+        </p>
+        <div id="actionsLog" class="log"></div>
+      </section>
+
+      <section class="card">
+        <h2>Incident checklist</h2>
+        <ol id="checklist">
+          <li>Confirm impact scope (services, regions, % errors).</li>
+          <li>Establish timeline and last known good deploy.</li>
+          <li>Identify top error signatures + blast radius.</li>
+          <li>Mitigate (rollback, feature flag, traffic shift) with confirmation.</li>
+          <li>Notify stakeholders and update status page.</li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2>Draft update</h2>
+        <textarea id="draft" rows="6" placeholder="Agent can draft a Slack/status update here…"></textarea>
+      </section>
+
+      <section class="card">
+        <h2>App → Agent (optional)</h2>
+        <p class="hint">
+          The app can also publish events to the agent. In many designs, you mark these as <code>notify</code> so the agent
+          absorbs context without speaking immediately.
+        </p>
+        <div class="row">
+          <button id="sendContextBtn" disabled>Send sample context to agent</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Backend token endpoint: <code>http://localhost:8000/api/voice-token</code>
+      </p>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

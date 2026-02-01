@@ -1,3 +1,7 @@
+
+
+
+
 # VoiceOps Bridge
 
 A voice-first incident triage copilot built on Vocal Bridge + LiveKit, designed with explicit decision boundaries, production-grade observability, and failure handling.
@@ -15,10 +19,15 @@ VoiceOps Bridge focuses on **architectural rigor and operational maturity** rath
 - Enforces **explicit guardrails**, **auditability**, and **failure-aware behavior** throughout the flow.
 
 ---
+## Awards & Recognition 🏆
+**Special Mention — Fastest End-to-End**  
+Received at the invitation-only DeepLearning.AI & Vocal Bridge Hackathon (Jan 30–31, 2026). The project moved from agent registration to full live functionality in approximately 10 minutes during the event.
+
+---
 
 ## Hackathon Context & Technical Leadership
 
-This project was developed and presented during an **invitation-only hackathon with a selective participant pool**.
+This project was developed and presented during DeepLearning.AI & Vocal Bridge — Build the Future of Voice AI Hackathon
 
 **Role and scope**
 - Acted as a principal engineer, focusing on system design, decision boundaries, observability, and failure handling.
@@ -55,7 +64,6 @@ voiceops-bridge/
   frontend/                # Minimal browser client using livekit-client
   docs/
     architecture.png       # Blog-ready architecture diagram
-    architecture.mmd       # Mermaid source
     system-design.md
     decision-boundaries.md
     observability.md

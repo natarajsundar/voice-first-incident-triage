@@ -1,0 +1,16 @@
+:root { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+body { margin: 0; background: #0b0f17; color: #e9eef7; }
+header { padding: 28px 24px 10px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+h1 { margin: 0 0 6px; font-weight: 750; }
+.subtitle { margin: 0; opacity: 0.8; }
+main { padding: 18px 24px 40px; display: grid; gap: 14px; max-width: 980px; margin: 0 auto; }
+.card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+button { background: #1e293b; color: #e9eef7; border: 1px solid rgba(255,255,255,0.12); padding: 10px 12px; border-radius: 10px; cursor: pointer; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+.pill { padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); font-size: 12px; }
+.hint { margin: 10px 0 0; opacity: 0.8; font-size: 13px; }
+.log { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New"; font-size: 12px; white-space: pre-wrap; background: rgba(0,0,0,0.35); border-radius: 10px; padding: 10px; min-height: 72px; border: 1px solid rgba(255,255,255,0.08); }
+textarea { width: 100%; border-radius: 10px; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.35); color: #e9eef7; padding: 10px; }
+code { background: rgba(255,255,255,0.07); padding: 2px 6px; border-radius: 7px; }
+footer { padding: 18px 24px; opacity: 0.75; text-align: center; border-top: 1px solid rgba(255,255,255,0.08); }
